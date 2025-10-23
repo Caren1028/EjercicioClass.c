@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <math.h> 
+int main() {
+    double x;        
+    double fx_resultado; 
+
+    printf("Ingrese un valor para x (puede ser decimal): ");
+  
+    if (scanf("%lf", &x) != 1) {
+        printf("Error: Entrada no válida.\n");
+        return 1;
+    }
+
+   
+    if (x <= 0) {
+       
+        fx_resultado = x + 3;
+    } else {
+       
+        fx_resultado = pow(x, 2) + 2 * x;
+        
+
+   
+    printf("\n----------------------------------------\n");
+    printf("Para x = %.2f\n", x);
+    printf("El valor de f(x) es: %.4f\n", fx_resultado);
+    printf("----------------------------------------\n");
+
+    return 0;
+}
